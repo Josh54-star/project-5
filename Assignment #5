@@ -1,0 +1,96 @@
+print("Enter [p] to see available options below ")
+
+def the_options():
+    print("Options: ")
+    print("[C] Convert from Celsius")
+    print("[F] Convert from Fahrenheit")
+    print("[MI] Convert from Miles")
+    print("[KM] Convert from Kilometers")
+    print("[CEM] Convert from Centimeters")
+    print("[ME] Convert from Meters")
+    print("[YA] Convert from Yard")
+    print("[M] Convert from Meter") 
+    print("[IN] Convert from Inches")
+    print("[CM] Convert from Centimeters")
+    print("[Q] Quit")
+
+converting = True
+while converting:
+    user_input = str.upper(input("Options: "))
+    if user_input == "P":
+        the_options()
+    elif user_input == "C":
+        def celsius():
+            cel = float(input("Enter in Celcius Unit: "))
+            calc_cel = (cel * 1.8) + 32
+            print(str(calc_cel) + " " + "Fahrenheit")
+        
+        
+        celsius()
+    elif user_input == "F":
+        def fahremheit():
+            f = float(input("Fahrenheit Unit: "))
+            calc_f = (f - 32) * 1.8
+            print(str(calc_f) + " " + "Celsius")
+        
+        
+        fahremheit()
+    elif user_input == "MI":
+        def miles():
+            MI = float(input("Miles Unit: "))
+            calc_MI = float(MI * 1.609)
+            print(str(calc_MI) + " " + "Kilometers") 
+
+
+        miles()
+    elif user_input == "KM":
+        def kilometers():
+            km = float(input("Kilometers Unit: "))
+            calc_km = float(km / 1.609)
+            print(str(calc_km) + " " + "Miles")
+    
+        kilometers()
+    elif  user_input == "CEM":
+        def centimeters():
+            cem = float(input("Centimeters Unit:"))
+            calc_cem = float(cem / 100)
+            print(str(calc_cem) + " " + "Meters")
+
+        centimeters()
+    elif user_input == "ME":
+        def meters():
+            ME = float(input("Meters Unit: "))
+            calc_ME = float(ME * 100)
+            print(str(calc_ME) + " " + "Centimeters")
+
+        meters()
+    elif user_input == "YA":
+        def  yard():
+            YA = float(input("Yard Unit: "))
+            calc_YA = float(YA / 1.094)
+            print(str(calc_YA) + " " + "Meters")
+
+
+        yard()
+    elif user_input == "M":
+        def meters():
+            M = float(input("Meters Unit: "))
+            calc_M = float(M * 1.094)
+            print(str(calc_M) + " " + "Yards")
+
+
+        meters()
+    elif user_input == "IN":
+        def  inches():
+            IN = float(input("Inches Unit: "))
+            calc_IN = float(IN * 2.54)
+            print(str(calc_IN) + " " + "Centimeters")
+
+        inches()
+    elif user_input == "CM":
+        def centimeters():
+            CM = float(input("Centimeters Unit: "))
+            calc_CM = float(CM / 2.54)
+            print(str(calc_CM) + " " + "Inches") 
+
+        centimeters()
